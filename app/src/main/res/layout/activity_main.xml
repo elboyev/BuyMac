@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/linearlayout"
+        android:gravity="center"
+        android:background="@color/nicecolor"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/macbook_pro_13_inch"
+            android:id="@+id/lapname"
+            android:textColor="#ababac"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lapsum"
+            android:text="@string/_13_inch_1299"
+            android:textColor="#a58f91"
+            android:textSize="18sp"
+            android:textStyle="italic" />
+
+
+        <ImageView
+            android:id="@+id/laptop"
+            android:layout_width="match_parent"
+            android:layout_height="274dp"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/laptop" />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/quantity"
+            android:id="@+id/txt1"
+            android:textStyle="bold"
+            android:textAppearance="@style/Widget.MaterialComponents.Toolbar"
+            android:textSize="26sp"
+            android:textColor="#e6e6e6"
+            android:fontFamily="serif-monospace"
+            android:paddingBottom="16dp" />
+
+        <LinearLayout
+            android:id="@+id/linearlayoutl2"
+            android:layout_width="wrap_content"
+            android:layout_height="59dp"
+            android:orientation="horizontal"
+            android:paddingBottom="16dp">
+
+            <Button
+                android:id="@+id/dec"
+                android:layout_width="48dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/black"
+                android:fontFamily="serif-monospace"
+                android:onClick="decrement"
+                android:text="@string/decrement"
+                android:textColor="#cf5863"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/soni"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif-monospace"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:text="@string/num"
+                android:textColor="#f47d7d"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/inc"
+                android:layout_width="48dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/black"
+                android:fontFamily="serif-monospace"
+                android:onClick="increment"
+                android:text="@string/increment"
+                android:textColor="#cf5863"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt2"
+            android:text="@string/price"
+            android:textSize="26sp"
+            android:textColor="#e6e6e6"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"
+            android:paddingBottom="16dp"
+            android:textAppearance="@style/Widget.MaterialComponents.Toolbar"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/narx"
+            android:text="@string/narxi"
+            android:textSize="30sp"
+            android:fontFamily="serif-monospace"
+            android:textStyle="bold"
+            android:textColor="#f47d7d"
+            android:paddingBottom="16dp"/>
+
+        <Button
+            android:id="@+id/bt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif-monospace"
+            android:text="@string/order"
+            android:textColor="#d6acac"
+            android:textSize="24sp"
+            android:backgroundTint="@color/black"
+            android:textStyle="bold"
+            android:onClick="submitOrder"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

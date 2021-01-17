@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">justjava</string>
+    <string name="quantity">QUANTITY</string>
+    <string name="num">0</string>
+    <string name="order">ORDER</string>
+    <string name="price">PRICE</string>
+    <string name="narxi">0</string>
+    <string name="decrement">-</string>
+    <string name="increment">+</string>
+    <string name="todo">TODO</string>
+    <string name="macbook_pro_13_inch">MacBook Pro</string>
+    <string name="_13_inch_1299">13-inch $1299</string>
+</resources>
